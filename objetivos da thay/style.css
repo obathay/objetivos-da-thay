@@ -3,7 +3,7 @@
     --cor-de-fundo:#85bb59;
     --texto1: #224e34;
     --texto2: #265f0c;
-    --botao-ativo: #ae00ff;
+    --botao-ativo: #79db53;
     --botao-inativo: rgba(43, 94, 13, 0.404);
     --texto-fundo: rgba(58,55,94,0.3);
 }
@@ -39,4 +39,15 @@ body{
     font-size: 25px;
     align-items: center;
     width: 110%;
+    border-radius: 0 20px 0 20px;
+    margin: 5px;
+}
+
+.botoes{
+    display: flex;
+}
+
+.ativo{
+    background: var(--botao-ativo);
+    border-bottom: 4px solid #224e34;
 }
