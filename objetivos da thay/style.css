@@ -3,8 +3,8 @@
     --cor-de-fundo:#85bb59;
     --texto1: #224e34;
     --texto2: #265f0c;
-    --botao-ativo: #79db53;
-    --botao-inativo: rgba(43, 94, 13, 0.404);
+    --botao-ativo: #92d481e1;
+    --botao-inativo: rgb(80, 151, 39);
     --texto-fundo: rgba(58,55,94,0.3);
 }
 
@@ -49,5 +49,5 @@ body{
 
 .ativo{
     background: var(--botao-ativo);
-    border-bottom: 4px solid #224e34;
+    border-bottom: 7px solid #224e34;
 }
