@@ -3,7 +3,7 @@
     --cor-de-fundo:#85bb59;
     --texto1: #224e34;
     --texto2: #265f0c;
-    --botao-ativo: #92d481e1;
+    --botao-ativo: hsla(108, 49%, 67%, 0.882);
     --botao-inativo: rgb(80, 151, 39);
     --texto-fundo: rgba(58,55,94,0.3);
 }
@@ -20,27 +20,50 @@ body{
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10px;
 }
 
 .titulo-principal{
     text-align: center;
     width: 100%;
-    font-size: 30px;
+    font-size: 33px;
 }
 
 .botao{
     font-family: "Gloria Hallelujah", sans-serif;
     background-color: var(--botao-inativo);
+    border: none;
     display: flex;
     color: var(--texto1);
     justify-content: center;
     padding: 1em;
-    font-size: 25px;
+    font-size: 20px;
     align-items: center;
     width: 110%;
-    border-radius: 0 20px 0 20px;
+    border-radius: 20px 20px 20px 20px;
     margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.botao:hover{
+    background-color: #4CAF50;
+    animation: none;
 }
 
 .botoes{
