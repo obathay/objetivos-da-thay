@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Shadows+Into+Light&display=swap');
 :root{
     --cor-de-fundo:#85bb59;
     --texto1: #224e34;
@@ -11,7 +11,7 @@
 body{
     background-color: var(--cor-de-fundo);
     color: var(--texto1);
-    font-family: "Gloria Hallelujah", sans-serif;
+    font-family: "Kalam", cursive;
 }
 
 .conteudo-principal{
@@ -30,7 +30,7 @@ body{
 }
 
 .botao{
-    font-family: "Gloria Hallelujah", sans-serif;
+    font-family: "Kalam", cursive;
     background-color: var(--botao-inativo);
     border: none;
     display: flex;
@@ -74,3 +74,14 @@ body{
     background: var(--botao-ativo);
     border-bottom: 7px solid #224e34;
 }
+
+p,
+label {
+  font:
+    1rem "Kalam", cursive;
+}
+
+input {
+    margin: 0.4rem;
+    background-color: red;
+  }
