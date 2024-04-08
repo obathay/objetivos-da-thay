@@ -37,7 +37,7 @@ body{
     color: var(--texto1);
     justify-content: center;
     padding: 1em;
-    font-size: 20px;
+    font-size: 25px;
     align-items: center;
     width: 110%;
     border-radius: 20px 20px 20px 20px;
@@ -46,7 +46,7 @@ body{
     text-align: center;
     text-decoration: none;
     transition: background-color 0.5s ease;
-    animation: pulse 3s infinite;
+    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -83,5 +83,10 @@ label {
 
 input {
     margin: 0.4rem;
-    background-color: red;
-  }
+}
+
+  .aba-textos{
+   background-color: var(--texto-fundo);
+   padding: 4em;
+   border-radius: 20px 20px 20px 20px;;
+}
