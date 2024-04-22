@@ -70,7 +70,7 @@ body{
     display: flex;
 }
 
-.ativo{
+.botao.ativo{
     background: var(--botao-ativo);
     border-bottom: 7px solid #224e34;
 }
@@ -78,7 +78,7 @@ body{
 p,
 label {
   font:
-    1rem "Kalam", cursive;
+    19px "Kalam", cursive;
 }
 
 input {
@@ -87,6 +87,25 @@ input {
 
   .aba-textos{
    background-color: var(--texto-fundo);
-   padding: 4em;
+   padding: 3em;
    border-radius: 20px 20px 20px 20px;;
+}
+
+.aba-conteudo.ativo{
+  display:block;
+}
+
+.aba-conteudo{
+  display: none;
+}
+
+.aba-conteudo-titulo-principal{
+ font-size: 34px;
+ text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+  color: var(--texto1);
+  font-size: 22px;
+  text-align: center;
 }
