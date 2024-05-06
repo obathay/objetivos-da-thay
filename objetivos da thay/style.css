@@ -109,3 +109,9 @@ input {
   font-size: 22px;
   text-align: center;
 }
+
+.contador{
+  font-size: 25px;
+  text-align: center;
+  padding: 1em;
+}
