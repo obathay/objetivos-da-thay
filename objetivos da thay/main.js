@@ -26,18 +26,6 @@ for(let i=0;i <botoes.length;i++){
     }
 }
 
-contadores[0].textContent = calculaTempo(tempoObjetivo1);
-contadores[1].textContent = calculaTempo(tempoObjetivo2);
-contadores[2].textContent = calculaTempo(tempoObjetivo3);
-contadores[3].textContent = calculaTempo(tempoObjetivo4);
-contadores[4].textContent = calculaTempo(tempoObjetivo5);
-contadores[5].textContent = calculaTempo(tempoObjetivo6);
-contadores[6].textContent = calculaTempo(tempoObjetivo7);
-contadores[7].textContent = calculaTempo(tempoObjetivo8);
-
-
-
-
 function calculaTempo(tempoObjetivo){
     let tempoAtual= new Date();
     let tempoFinal= tempoObjetivo-tempoAtual;
@@ -49,6 +37,23 @@ function calculaTempo(tempoObjetivo){
     minutos  %= 60;
     horas  %= 24;
 
-    return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos ";
+    return dias + " longos dias com " + horas + " horas boas com " + minutos + "  minutos misericordiosos e " + segundos + " segundos bem-intencionados 🕗";
 }
 
+
+ comecaCronometro();
+
+ function comecaCronometro(){
+    atualizaCronometro();
+    setInterval(atualizaCronometro,1000);}
+
+    function atualizaCronometro(){
+        contadores[0].textContent = calculaTempo(tempoObjetivo1);
+        contadores[1].textContent = calculaTempo(tempoObjetivo2);
+        contadores[2].textContent = calculaTempo(tempoObjetivo3);
+        contadores[3].textContent = calculaTempo(tempoObjetivo4);
+        contadores[4].textContent = calculaTempo(tempoObjetivo5);
+        contadores[5].textContent = calculaTempo(tempoObjetivo6);
+        contadores[6].textContent = calculaTempo(tempoObjetivo7);
+        contadores[7].textContent = calculaTempo(tempoObjetivo8);
+    }
